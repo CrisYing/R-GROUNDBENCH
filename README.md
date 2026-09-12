@@ -4,6 +4,13 @@ R-GroundBench is a diagnostic benchmark for evaluating R-group grounding in Mark
 
 This repository contains the public evaluation package only. Dataset files are released separately on Hugging Face and should be placed under `data/` before running the evaluators. The data construction and editing pipeline is not included in this repository.
 
+## Overview
+
+![R-GroundBench case study](images/case_study.png)
+
+- [Teaser figure (PDF)](images/R_GROUNDBENCH_teaser_v1.1.pdf)
+- [R-group framework (PDF)](images/r-frame.drawio.pdf)
+
 ## Repository Layout
 
 - `evaluation/`: VQA evaluation, generation evaluation, scaffold-match verification, result cleanup, and symbolic/template baselines.
@@ -12,6 +19,7 @@ This repository contains the public evaluation package only. Dataset files are r
 - `prompts/`: reference system prompts and prompt templates.
 - `configs/`: example API/model/path configuration files.
 - `DATA_FORMAT.md`: benchmark input and output schemas.
+- `images/`: paper figures (teaser, R-group framework, and case study).
 
 ## Installation
 
