@@ -4,8 +4,11 @@ __pycache__/
 .env
 .env.*
 !.env.example
+.hf_upload_state/
 data/
+dataset/
 results/
+result/
 outputs/
 logs/
 *.log
