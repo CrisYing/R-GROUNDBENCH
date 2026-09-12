@@ -1,0 +1,4 @@
+data_root: data
+vqa_dir: data/vqa_dataset
+generation_dir: data/generation_qa
+results_dir: results

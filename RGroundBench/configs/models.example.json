@@ -1,0 +1,14 @@
+{
+  "models": [
+    {
+      "name": "gpt-4o",
+      "provider": "openai-compatible",
+      "supports_images": true
+    },
+    {
+      "name": "local-model",
+      "provider": "openai-compatible",
+      "supports_images": false
+    }
+  ]
+}

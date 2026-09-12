@@ -1,0 +1,6 @@
+{
+  "split": "easy",
+  "original_esmiles": "c1cc(*)ccc1<sep><a>3:R</a>",
+  "instruction": "Replace R with 4-chlorophenyl.",
+  "output_smiles": "Clc1ccc(-c2ccccc2)cc1"
+}

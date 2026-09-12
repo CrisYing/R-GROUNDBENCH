@@ -1,0 +1,11 @@
+{
+  "split": "easy_basic",
+  "original_esmiles": "N1=CN=C2N(*)C=NC2=C1N*<sep><a>5:R</a><a>12:X</a>",
+  "instruction": "Replace R with phenyl.",
+  "question": "Which molecule is the correct result of the following edit instruction applied to the Markush structure?",
+  "option_A_smiles": "Nc1ncnc2n(*)cnc12",
+  "option_B_smiles": "Nc1ncnc2n(c3ccccc3)cnc12",
+  "option_C_smiles": "Nc1ncnc2n(C)cnc12",
+  "option_D_smiles": "None of the above",
+  "correct_answer": "B"
+}
