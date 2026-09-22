@@ -8,9 +8,11 @@ This repository contains the public evaluation package only. Dataset files are r
 
 ![R-GroundBench teaser](images/R_GROUNDBENCH_teaser_v1.1.png)
 
+<!--
 ![R-group framework](images/r-frame.png)
 
 ![R-GroundBench case study](images/case_study.png)
+-->
 
 High-resolution PDF sources: [teaser](images/R_GROUNDBENCH_teaser_v1.1.pdf) · [R-group framework](images/r-frame.drawio.pdf)
 
