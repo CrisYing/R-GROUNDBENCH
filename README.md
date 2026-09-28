@@ -2,7 +2,7 @@
 
 R-GroundBench is a diagnostic benchmark for evaluating R-group grounding in Markush molecular editing. Given a Markush scaffold, an R-group instruction or property question, and benchmark inputs from the released dataset, the evaluation code measures whether a model selects or generates the correct edited molecule.
 
-This repository contains the public evaluation package only. Dataset files are released separately on Hugging Face and should be placed under `data/` before running the evaluators. The data construction and editing pipeline is not included in this repository.
+This repository contains the public evaluation package only. Dataset files are released separately on [Hugging Face](https://huggingface.co/datasets/Crisying/rgroup-generation-benchmark) and should be placed under `data/` before running the evaluators. The data construction and editing pipeline is not included in this repository.
 
 ## Overview
 
