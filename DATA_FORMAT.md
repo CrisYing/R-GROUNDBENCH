@@ -2,6 +2,13 @@
 
 R-GroundBench evaluators expect Hugging Face Dataset directories for benchmark inputs and JSONL files for model outputs. Paths below are relative to the repository root unless environment variables override them.
 
+The official unified dataset is [`latent-recast-research/R-GroundBench`](https://huggingface.co/datasets/latent-recast-research/R-GroundBench). Its Hub configurations map to the local evaluator split names as follows:
+
+- VQA: `vqa_easy_basic`, `vqa_easy_advanced`, `vqa_medium_basic`, `vqa_medium_advanced`, `vqa_hard_basic`, and `vqa_hard_advanced`
+- Generation: `generation_easy` and `generation_hard`
+
+Use the Hub configuration names with `datasets.load_dataset`. The directory names documented below describe the evaluation package's local input layout.
+
 ## VQA Input
 
 Expected directory: `data/vqa_dataset`

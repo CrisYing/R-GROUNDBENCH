@@ -2,7 +2,7 @@
 
 R-GroundBench is a diagnostic benchmark for evaluating R-group grounding in Markush molecular editing. Given a Markush scaffold, an R-group instruction or property question, and benchmark inputs from the released dataset, the evaluation code measures whether a model selects or generates the correct edited molecule.
 
-This repository contains the public evaluation package only. Dataset files are released separately on Hugging Face and should be placed under `data/` before running the evaluators. 
+This repository contains the public evaluation package only. Dataset files are released separately on Hugging Face and should be placed under data/ before running the evaluators.
 
 ## Overview
 
@@ -43,7 +43,35 @@ pip install -r requirements.txt
 
 ## Data
 
-Download the released benchmark dataset from Hugging Face and arrange it as:
+The unified benchmark dataset is available from the official Hugging Face repository:
+
+**[latent-recast-research/R-GroundBench](https://huggingface.co/datasets/latent-recast-research/R-GroundBench)**
+
+Load a VQA or Generation configuration with `datasets`:
+
+```python
+from datasets import load_dataset
+
+vqa = load_dataset(
+    "latent-recast-research/R-GroundBench",
+    "vqa_hard_basic",
+)
+
+generation = load_dataset(
+    "latent-recast-research/R-GroundBench",
+    "generation_hard",
+)
+```
+
+The available configurations are:
+
+- VQA Basic: `vqa_easy_basic`, `vqa_medium_basic`, `vqa_hard_basic`
+- VQA Advanced: `vqa_easy_advanced`, `vqa_medium_advanced`, `vqa_hard_advanced`
+- Generation: `generation_easy`, `generation_hard`
+
+Image columns contain repository-relative paths. See the Hugging Face dataset card for the supported `hf_hub_download` pattern.
+
+The evaluation scripts currently read Hugging Face Dataset directories from the following local layout:
 
 ```text
 data/
